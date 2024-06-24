@@ -33,4 +33,10 @@ The Ollama REST API should now be listening on http://127.0.0.1:11434 , so you c
 
 ## Semantic Kernel
 
-Currently just a simple example in C# is present that connects to a local running LLM through the Semantic Kernel Framework.
+Currently just a simple example in C# is present that connects to a local running LLM through the Semantic Kernel Framework. It requires dotnet 8 and the dotnet package Microsoft.SemanticKernel.
+On the command line, navigate to the clone of the project and add Semantic Kernel package:
+```dotnet add package Microsoft.SemanticKernel```
+Next build it:
+```dotnet build```
+Next navigate to the .\llms\ folder, and run it:
+```dotnet run```
