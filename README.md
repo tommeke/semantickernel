@@ -11,6 +11,6 @@ Once Ollama is installed and serving some simple LLMs (through standard local op
 
 In linux or wsl, install Ollama:
 
-"""
+'''
 curl -fsSL https://ollama.com/install.sh | sh
-"""
+'''
