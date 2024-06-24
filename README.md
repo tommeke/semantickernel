@@ -11,6 +11,26 @@ Once Ollama is installed and serving some simple LLMs (through standard local op
 
 In linux or wsl, install Ollama:
 
-'''
-curl -fsSL https://ollama.com/install.sh | sh
-'''
+```curl -fsSL https://ollama.com/install.sh | sh```
+
+start the Ollama service:
+
+```ollama serve```
+
+download and run a small LLM (probably will need to do in seperate terminal if the serve command wasn't run in background mode):
+
+```ollama run phi3```
+
+This will first download the model and start it up. Ollama will present you a prompt interface with which you can interact immediately with the loaded LLM.
+Some other LLMs available (check the Ollama website for a more extensive list: https://ollama.com/models , https://github.com/ollama/ollama ): 
+- mistral
+- llama2-uncensored
+- llama3
+- llama3:70b
+- phi3:medium
+
+The Ollama REST API should now be listening on http://127.0.0.1:11434 , so you can just use that uri to connect to it through Semantic Kernel.
+
+## Semantic Kernel
+
+Currently just a simple example in C# is present that connects to a local running LLM through the Semantic Kernel Framework.
